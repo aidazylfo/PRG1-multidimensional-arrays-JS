@@ -46,3 +46,18 @@ for (let i = 0; i < array2D.length; i++) { // Iterate through each element in th
 
 console.log("Maximum Value:", max);
 
+// Can you calculate the minimum value stored in a 2D array? yes minimum value is 1
+
+let min = array2D[0][0]; // Initialize min with the first element
+
+// Iterate through each row
+for (let i = 0; i < array2D.length; i++) {
+    // Iterate through each element in the row
+    for (let j = 0; j < array2D[i].length; j++) {
+        if (array2D[i][j] < min) {
+            min = array2D[i][j]; // Update min if the current element is smaller
+        }
+    }
+}
+
+console.log("Minimum Value:", min);
