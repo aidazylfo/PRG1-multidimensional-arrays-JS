@@ -30,3 +30,19 @@ for (let i = 0; i < array2D.length; i++) { // Iterate through each element in th
 const average = total / count;
 console.log("Average:", average);
 
+
+// Can you calculate the maximum value stored within a 2D array? yes maxiumum value is 9 
+
+let max = array2D[0][0]; // Initialize max with the first element
+
+// Iterate through each row
+for (let i = 0; i < array2D.length; i++) { // Iterate through each element in the row
+    for (let j = 0; j < array2D[i].length; j++) {
+        if (array2D[i][j] > max) {
+            max = array2D[i][j]; // Update max if current element is larger
+        }
+    }
+}
+
+console.log("Maximum Value:", max);
+
