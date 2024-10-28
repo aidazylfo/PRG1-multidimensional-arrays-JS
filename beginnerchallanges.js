@@ -16,3 +16,17 @@ for (let i = 0; i < array2D.length; i++) { // Iterate through each element in th
 console.log("Total:", total);
 
 
+// Can you calculate the average of a 2D array? yes average is 10
+
+let count = 0;
+
+for (let i = 0; i < array2D.length; i++) { // Iterate through each element in the row
+    for (let j = 0; j < array2D[i].length; j++) {
+        total += array2D[i][j]; // Add the element to the total
+        count++; // Increment the count of elements
+    }
+}
+
+const average = total / count;
+console.log("Average:", average);
+
